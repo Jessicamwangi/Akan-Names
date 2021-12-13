@@ -1,5 +1,5 @@
 # Akan Names.
-#### Live link 
+#### Live link https://jessicamwangi.github.io/Akan-Names/ 
 #### By Jessica Mwangi
 ## Description
 This webpage helps you to find your Akan Name through your birthday and gender. Akan Names originated from the Ghananian people and newborns were given these names according to the day of the week they were born in.
