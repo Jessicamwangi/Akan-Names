@@ -38,7 +38,46 @@
         <p>To get your  Akan name fill out the form below with your year of birth, date of birth and gender.</p>
         
       </div>
-      
+      <div class="container">
+        <form id="nameGenerator" method="POST" onSubmit="submitFunction(event)">
+          <div class="form-group row">
+            <label for="Year">Year of Birth</label>
+            <div class="col-md-5">
+              <input type="number" id="year" min="1900" max="2100" required>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="month">Month</label>
+            <div class="col">
+              <input type="number" id="month" min="1"  max="12" required>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="day" class="form-label">Day</label>
+            <div class="col">
+              <input type="number"  id="day" min="1" max="31" required>
+            </div>
+          <fieldset class="form-group row">
+            <label>Select Gender</label> <br />
+            <select id="gender">
+              <option value="select-gender">select gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+            <div class="col">
+              <div class="form-check">
+                
+              </div>
+            </div>
+          </fieldset>
+          <div class="form-group">         
+          <div class="col-md-10">
+              <button onclick= "getAkanName()" type="button" id = submit class="btn btn-primary"> Submit.</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
    <script src="js/scripts.js"></script>
   </body>
