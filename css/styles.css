@@ -80,5 +80,9 @@ nav ul li a {
   background-image: url(../assets/backgroundjpg);
   background-repeat: no-repeat;
   background-size: cover;
-  
+
+}
+.container {
+  font-size: 25px;
+  color: #000;
 }
