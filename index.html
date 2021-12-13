@@ -1,84 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Akan Names.</title>
-  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-  <link rel="stylesheet" href="css/styles.css" type="text/css">
-</head>
-<body>
-  <div class="grid-container">
-    <div id="one">
-  <!--navigation---------->
-      <nav>
-        <ul class="navigation">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Form</a></li>
-        </ul>
-      </nav>
-      <div class="Home">
-        <h1>Akan Names.</h1>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akan Names.</title>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+  </head>
+
+  <body>
+    <div class="grid-container">
+      <div id="one">
+        <!--navigation---------->
+        <nav>
+          <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Form</a></li>
+          </ul>
+        </nav>
+        <div class="Home">
+          <h1>Akan Names.</h1>
+        </div>
       </div>
-    </div>
-    <div id="two">
-      <img src="assets/people.jpg" alt="about image">
-      <div class="About">
-        <h1>About</h1>
-        <p>The Akan people of Ghana ferquently name their children after the days of the week they were born in. These names have further meanings concerning the soul and character of the person. This naming tradition is shared all through West Africa. A few examples of people that had these names are Kwame Nkrumah, Kofi Annan and many others.
-          If you are interested in learning more about the Akan Naming system click this <a href="https://en.wikipedia.org/wiki/Akan_names">link</a>. </p>
+      <div id="two">
+        <img src="assets/people.jpg" alt="about image">
+        <div class="About">
+          <h1>About</h1>
+          <p>The Akan people of Ghana ferquently name their children after the days of the week they were born in. These names have further meanings concerning the soul and character of the person. This naming tradition is shared all through West Africa. A few examples of people that had these names are Kwame Nkrumah, Kofi Annan and many others.
+            If you are interested in learning more about the Akan Naming system click this <a href="https://en.wikipedia.org/wiki/Akan_names">link</a>. </p>
+        </div>
       </div>
-    </div>
-    <div id="three">
-      <div class="form">
-        <h1>Find Your Akan Name Here</h1>
-        <p>This webpage allows you to fill out a form which finds the day of the week which you were born in and tells you your Akan Name. </p>
-        <p>To get your  Akan name fill out the form below with your year of birth, date of birth and gender.</p>
-        
-      </div>
-      <div class="container">
-        <form id="nameGenerator" method="POST" onSubmit="submitFunction(event)">
-          <div class="form-group row">
-            <label for="Year">Year of Birth</label>
-            <div class="col-md-5">
-              <input type="number" id="year" min="1900" max="2100" required>
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="month">Month</label>
-            <div class="col">
-              <input type="number" id="month" min="1"  max="12" required>
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="day" class="form-label">Day</label>
-            <div class="col">
-              <input type="number"  id="day" min="1" max="31" required>
-            </div>
-          <fieldset class="form-group row">
-            <label>Select Gender</label> <br />
-            <select id="gender">
-              <option value="select-gender">select gender</option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-            </select>
-            <div class="col">
-              <div class="form-check">
-                
+      <div id="three">
+        <div class="form">
+          <h1>Find Your Akan Name Here</h1>
+          <p>This webpage allows you to fill out a form which finds the day of the week which you were born in and tells you your Akan Name. </p>
+          <p>To get your Akan name fill out the form below with your year of birth, date of birth and gender.</p>
+
+        </div>
+        <div class="container">
+          <form id="nameGenerator" method="POST" onSubmit="submitFunction(event)">
+            <div class="form-group row">
+              <label for="Year">Year of Birth</label>
+              <div class="col-md-5">
+                <input type="number" id="year" min="1900" max="2100" required>
               </div>
             </div>
-          </fieldset>
-          <div class="form-group">         
-          <div class="col-md-10">
-              <button onclick= "getAkanName()" type="button" id = submit class="btn btn-primary"> Submit.</button>
+            <div class="form-group row">
+              <label for="month">Month</label>
+              <div class="col">
+                <input type="number" id="month" min="1" max="12" required>
+              </div>
             </div>
-          </div>
-        </form>
+            <div class="form-group row">
+              <label for="day" class="form-label">Day</label>
+              <div class="col">
+                <input type="number" id="day" min="1" max="31" required>
+              </div>
+              <fieldset class="form-group row">
+                <label>Select Gender</label> <br />
+                <select id="gender">
+                  <option value="select-gender">select gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+                <div class="col">
+                  <div class="form-check">
+
+                  </div>
+                </div>
+              </fieldset>
+              <div class="form-group">
+                <div class="col-md-10">
+                  <button onclick="getAkanName()" type="button" id=submit class="btn btn-primary"> Submit.</button>
+                </div>
+              </div>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-   <script src="js/scripts.js"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
