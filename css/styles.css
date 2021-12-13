@@ -1,0 +1,20 @@
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+  'one one one one one one'
+  'two two two two two two' 
+  'three three three three three three'
+}
+#one {
+  background-color: white;
+  grid-area: one;
+}
+#two {
+  background-color: skyblue;
+  grid-area: two;
+}
+#three {
+  background-color: lightskyblue;
+  grid-area: three;
+  
+}  
