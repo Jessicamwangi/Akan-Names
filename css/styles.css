@@ -74,3 +74,11 @@ nav ul li a {
   position: relative;
   color: black;
 }
+#three {
+  text-align: center;
+  font-size: 25px;
+  background-image: url(../assets/backgroundjpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
